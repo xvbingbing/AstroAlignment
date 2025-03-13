@@ -1,0 +1,810 @@
+[
+    {
+        "\ufeffquestion": "What key advantage does the Atacama Large Millimeter/submillimeter Array (ALMA) offer in the study of protoplanetary disks?",
+        "A": "ALMA's high-resolution spectroscopy allows for detailed analysis of the chemical composition of protoplanetary disks, including the abundance of complex organic molecules.",
+        "B": "ALMA's sensitivity to a wide range of wavelengths, from radio to infrared, provides a comprehensive view of the physical processes within protoplanetary disks.",
+        "C": "ALMA's ability to observe at millimeter and submillimeter wavelengths enables spatially resolved imaging of dust and molecules within protoplanetary disks.",
+        "D": "ALMA's location in the Atacama Desert provides exceptional atmospheric conditions, minimizing interference from water vapor and other atmospheric constituents.",
+        "choice": " C. ALMA's ability to observe at millimeter and submillimeter wavelengths enables spatially resolved imaging of dust and molecules within protoplanetary disks."
+    },
+    {
+        "\ufeffquestion": "How does the study of interstellar objects like 'Oumuamua and Borisov contribute to our understanding of planetary systems?",
+        "A": "These objects provide direct evidence for the existence of planets beyond our solar system, as their trajectories indicate gravitational interactions with unseen planetary bodies.",
+        "B": "By analyzing the chemical composition and physical properties of these objects, astronomers can infer the conditions in the protoplanetary disks where they originated, shedding light on planet formation processes.",
+        "C": "The study of these objects helps us understand the dynamics of planetary systems and the mechanisms by which small bodies can be ejected from their parent systems.",
+        "D": "The unique orbits of these objects suggest they may have originated from outside the Milky Way galaxy, offering insights into the formation of planetary systems in other galaxies.",
+        "choice": " C. The study of these objects helps us understand the dynamics of planetary systems and the mechanisms by which small bodies can be ejected from their parent systems."
+    },
+    {
+        "\ufeffquestion": "What role do galactic dynamos play in shaping the interstellar medium (ISM) and circumgalactic medium (CGM)?",
+        "A": "Galactic dynamos generate and amplify magnetic fields within galaxies, influencing the dynamics and structure of the ISM and CGM. These magnetic fields play a crucial role in processes such as star formation, cosmic ray propagation, and the formation of galactic winds.",
+        "B": "Galactic dynamos are responsible for the observed rotation of galaxies, which in turn affects the distribution of gas and dust in the ISM and CGM.",
+        "C": "Galactic dynamos are thought to be powered by the accretion of matter onto supermassive black holes at the centers of galaxies, providing energy that heats and ionizes the ISM and CGM.",
+        "D": "Galactic dynamos are a theoretical concept with no observational evidence to support their existence.",
+        "choice": " A."
+    },
+    {
+        "\ufeffquestion": "What are some key challenges faced by current hydrodynamical simulations of galaxy formation and evolution?",
+        "A": "Simulations struggle to accurately model the complex interplay between dark matter, gas, and stars, particularly on small scales where star formation and feedback processes occur.",
+        "B": "The computational cost of these simulations is immense, limiting their ability to resolve the detailed structure of galaxies and their surrounding environments.",
+        "C": "The physical processes governing galaxy formation and evolution are not fully understood, leading to uncertainties in the implementation of these processes in simulations.",
+        "D": "All of the above.",
+        "choice": " D."
+    },
+    {
+        "\ufeffquestion": "How does the study of high-redshift quasars contribute to our understanding of the early Universe?",
+        "A": "High-redshift quasars serve as beacons, illuminating the intergalactic medium and providing insights into the process of cosmic reionization.",
+        "B": "The study of high-redshift quasars helps constrain the properties of dark matter and dark energy, as their light is affected by the distribution of these mysterious components of the Universe.",
+        "C": "High-redshift quasars are thought to be powered by the first generation of stars, offering a glimpse into the formation of these primordial stellar populations.",
+        "D": "High-redshift quasars provide evidence for the existence of supermassive black holes in the early Universe, challenging our understanding of black hole formation and growth.",
+        "choice": " A.\n\n[Note: While options B, C, and D are also important areas of research in astrophysics, the question specifically asks about the contribution of high-redshift quasars to our understanding of the early Universe, which is primarily related to cosmic reionization (Option A).]"
+    },
+    {
+        "\ufeffquestion": "What is the primary mechanism responsible for generating microgauss-strength magnetic fields in spiral galaxies?",
+        "A": "Primordial magnetic fields from the early Universe",
+        "B": "Dynamo action, converting kinetic energy into magnetic energy",
+        "C": "Magnetic fields generated by individual stars and supernovae",
+        "D": "External magnetic fields from intergalactic space",
+        "choice": " B. Dynamo action, converting kinetic energy into magnetic energy."
+    },
+    {
+        "\ufeffquestion": "What observational evidence supports the existence of large-scale coherent magnetic fields in galaxies?",
+        "A": "Optical polarization observations revealing aligned dust grains",
+        "B": "Synchrotron emission from relativistic cosmic ray electrons",
+        "C": "Faraday rotation measurements indicating ordered magnetic fields",
+        "D": "All of the above",
+        "choice": " D. All of the above."
+    },
+    {
+        "\ufeffquestion": "How does the 'catastrophic quenching' problem challenge the theory of large-scale dynamos in galaxies?",
+        "A": "It suggests that dynamo action becomes inefficient at high magnetic Reynolds numbers, leading to weaker magnetic fields than observed.",
+        "B": "It implies that the timescales for generating large-scale magnetic fields are much longer than the age of the Universe.",
+        "C": "It indicates that small-scale magnetic fields are preferentially amplified, preventing the formation of large-scale structures.",
+        "D": "Both A and B",
+        "choice": " D. Both A and B."
+    },
+    {
+        "\ufeffquestion": "What are potential solutions to the 'catastrophic quenching' problem in galactic dynamos?",
+        "A": "Magnetic helicity fluxes, which can transport magnetic helicity out of the galaxy, allowing the dynamo to operate more efficiently.",
+        "B": "The presence of a strong initial seed magnetic field, reducing the reliance on dynamo amplification.",
+        "C": "Modifications to the standard dynamo theory, such as the inclusion of non-local and time-dependent effects.",
+        "D": "All of the above",
+        "choice": " D. All of the above."
+    },
+    {
+        "\ufeffquestion": "How does the circumgalactic medium (CGM) influence the galactic dynamo?",
+        "A": "It provides a source of magnetized gas inflows that can seed the galactic dynamo.",
+        "B": "It acts as a reservoir for galactic outflows, which can carry away magnetic helicity and alleviate catastrophic quenching.",
+        "C": "It can drive turbulence and instabilities that contribute to dynamo action.",
+        "D": "All of the above",
+        "choice": " D. All of the above."
+    },
+    {
+        "\ufeffquestion": "How does the net angular momentum transfer between a circumbinary accretion disk and the central binary depend on the mass of the disk?",
+        "A": "The net angular momentum transfer is always from the binary to the disk, regardless of the disk mass.",
+        "B": "The net angular momentum transfer is always from the disk to the binary, regardless of the disk mass.",
+        "C": "If the disk mass is much smaller than the binary mass, the net transfer can be from the disk to the binary, leading to binary expansion. If the disk mass is much larger than the binary mass, the net transfer is from the binary to the disk, leading to binary orbital decay.",
+        "D": "The net angular momentum transfer is always negligible.",
+        "choice": " C."
+    },
+    {
+        "\ufeffquestion": "How does the eccentricity of a binary star system influence the long-term evolution of the inclination of a misaligned circumbinary disk?",
+        "A": "The disk always evolves towards alignment with the binary orbital plane, regardless of the binary eccentricity.",
+        "B": "The disk always evolves towards a polar alignment (perpendicular to the binary orbital plane), regardless of the binary eccentricity.",
+        "C": "For low-eccentricity binaries, the disk tends to evolve towards alignment. For high-eccentricity binaries, the disk can evolve towards polar alignment.",
+        "D": "The disk inclination remains constant over time.",
+        "choice": " C. For low-eccentricity binaries, the disk tends to evolve towards alignment. For high-eccentricity binaries, the disk can evolve towards polar alignment."
+    },
+    {
+        "\ufeffquestion": "What is the primary difference between the dynamics of a circumbinary accretion disk around an isolated binary and a binary embedded in a 'big' disk (e.g., an AGN disk)?",
+        "A": "There is no significant difference; the dynamics are essentially the same.",
+        "B": "The presence of the 'big' disk suppresses accretion onto the binary, preventing the formation of circumstellar disks.",
+        "C": "The strong velocity shear and angular momentum of the 'big' disk significantly alter the flow structure around the binary, leading to different accretion dynamics and binary orbital evolution compared to an isolated binary.",
+        "D": "Binaries embedded in 'big' disks always experience rapid orbital decay due to dynamical friction.",
+        "choice": " C. The strong velocity shear and angular momentum of the 'big' disk significantly alter the flow structure around the binary, leading to different accretion dynamics and binary orbital evolution compared to an isolated binary."
+    },
+    {
+        "\ufeffquestion": "What is the primary goal of calibrating subgrid feedback models in cosmological simulations?",
+        "A": "To ensure that simulations accurately reproduce the observed properties of the interstellar medium.",
+        "B": "To create a diverse range of galaxy morphologies in the simulations.",
+        "C": "To achieve convergence in simulation results across different resolutions and box sizes.",
+        "D": "To steer simulations towards producing a broadly realistic galaxy population that is consistent with key observational constraints.",
+        "choice": " D. To steer simulations towards producing a broadly realistic galaxy population that is consistent with key observational constraints."
+    },
+    {
+        "\ufeffquestion": "Why do simulations struggle to achieve convergence, especially when it comes to the properties of cosmic gas?",
+        "A": "The physics of galaxy formation is inherently chaotic and sensitive to small changes in initial conditions.",
+        "B": "The limitations of current computational resources restrict the achievable resolution and box sizes of simulations.",
+        "C": "Subgrid models, used to approximate unresolved physics, introduce resolution-dependent effects and can lead to differing outcomes across simulations.",
+        "D": "The adopted cosmology and the parameters of the cosmological model are not yet precisely known.",
+        "choice": " C.\n\nHowever, it's essential to note that all these factors (A, B, C, and D) can contribute to the difficulties in achieving convergence in simulations of cosmic gas properties."
+    },
+    {
+        "\ufeffquestion": "What is the key factor that enables modern cosmological simulations to reproduce the observed size-mass relation of galaxies, compared to earlier generations of simulations?",
+        "A": "The inclusion of magnetic fields in the simulations.",
+        "B": "The ability to resolve the multiphase structure of the interstellar medium.",
+        "C": "The implementation of efficient feedback processes that regulate star formation and prevent excessive gas cooling.",
+        "D": "The use of more accurate initial conditions based on precise measurements of the cosmic microwave background.",
+        "choice": " C. The implementation of efficient feedback processes that regulate star formation and prevent excessive gas cooling."
+    },
+    {
+        "\ufeffquestion": "What is the primary driver of the observed bimodality in galaxy colors?",
+        "A": "Differences in the star formation histories of galaxies due to variations in their halo formation times.",
+        "B": "The onset of efficient AGN feedback in massive galaxies, which quenches star formation and leads to a population of red, passive galaxies.",
+        "C": "Environmental effects, such as ram pressure stripping and starvation, that remove gas from satellite galaxies and suppress their star formation.",
+        "D": "The metallicity of galaxies, with metal-rich galaxies exhibiting redder colors due to the presence of dust.",
+        "choice": " A.\n\n[Explanation: The primary driver of the observed bimodality in galaxy colors is differences in the star formation histories of galaxies due to variations in their halo formation times.]"
+    },
+    {
+        "\ufeffquestion": "How do simulations help us understand the differences in the evolution of central and satellite galaxies?",
+        "A": "Simulations allow us to track the individual merger histories of galaxies and determine whether they have ever been satellites.",
+        "B": "By comparing the properties of galaxies in different environments, simulations reveal the impact of environmental processes like ram pressure stripping and starvation on satellite galaxies.",
+        "C": "Simulations enable us to measure the dark matter halo masses of galaxies, which is a key factor influencing their evolution.",
+        "D": "Simulations allow us to directly observe the gas accretion and outflow rates of galaxies, providing insights into how their gas reservoirs evolve.",
+        "choice": " B. By comparing the properties of galaxies in different environments, simulations reveal the impact of environmental processes like ram pressure stripping and starvation on satellite galaxies."
+    },
+    {
+        "\ufeffquestion": "What has revolutionized the design of modern radio telescopes in the past 5-10 years?",
+        "A": "The discovery of new radio galaxies",
+        "B": "Improvements in optical telescopes",
+        "C": "Technological advancements in bandwidth, digital hardware, and data storage",
+        "D": "The development of new theories of gravity",
+        "choice": " C.\n\nTechnological advancements in bandwidth, digital hardware, and data storage have revolutionized the design of modern radio telescopes in the past 5-10 years."
+    },
+    {
+        "\ufeffquestion": "What is the primary advantage of radio imaging spectroscopy for studying incoherent emission sources?",
+        "A": "It allows for the direct measurement of the magnetic field strength.",
+        "B": "It enables the identification of different types of solar flares.",
+        "C": "It provides information about the scattering properties of the solar corona.",
+        "D": "It allows for the derivation of physical parameters such as electron energy distribution and plasma temperature from the brightness temperature spectrum.",
+        "choice": " D. It allows for the derivation of physical parameters such as electron energy distribution and plasma temperature from the brightness temperature spectrum."
+    },
+    {
+        "\ufeffquestion": "How does the presence of non-thermal electrons in a plasma affect gyroresonance emission?",
+        "A": "It causes the gyroresonance emission lines to become narrower.",
+        "B": "It reduces the opacity of higher harmonics, making them less visible.",
+        "C": "It can make higher harmonics optically thick, depending on the specific energy distribution of the non-thermal electrons.",
+        "D": "It has no significant effect on gyroresonance emission.",
+        "choice": " C. It can make higher harmonics optically thick, depending on the specific energy distribution of the non-thermal electrons."
+    },
+    {
+        "\ufeffquestion": "What is the primary limitation of radio imaging spectroscopy for studying coherent emission sources, such as type III bursts?",
+        "A": "The brightness temperature spectrum of coherent sources does not directly translate to physical parameters.",
+        "B": "Coherent sources are too faint to be detected by current radio telescopes.",
+        "C": "The emission mechanisms of coherent sources are not well understood.",
+        "D": "Coherent sources are only visible at low radio frequencies, where spatial resolution is limited.",
+        "choice": " C. The emission mechanisms of coherent sources are not well understood."
+    },
+    {
+        "\ufeffquestion": "What is a significant challenge for future development of radio imaging spectroscopy?",
+        "A": "Increasing the number of radio telescopes available for observations.",
+        "B": "Improving the sensitivity of radio telescopes to detect fainter sources.",
+        "C": "Developing new theories of radio emission mechanisms.",
+        "D": "Finding ways to efficiently process and visualize the vast amounts of data produced.",
+        "choice": " D. Finding ways to efficiently process and visualize the vast amounts of data produced."
+    },
+    {
+        "\ufeffquestion": "What is the primary reason for the decline in the number density of luminous quasars at redshifts greater than 5?",
+        "A": "A decrease in the overall star formation rate, leading to fewer potential host galaxies for quasars.",
+        "B": "An increase in the neutral hydrogen fraction in the intergalactic medium, which obscures the quasars' light.",
+        "C": "A decrease in the number of massive black hole seeds that can form and grow into supermassive black holes.",
+        "D": "An increase in the average metallicity of the Universe, leading to a decrease in the efficiency of black hole accretion.",
+        "choice": " C. A decrease in the number of massive black hole seeds that can form and grow into supermassive black holes."
+    },
+    {
+        "\ufeffquestion": "What key observation supports the conclusion that supermassive black holes must form and grow rapidly within the first billion years of cosmic history?",
+        "A": "The detection of strong X-ray emission from quasars at redshifts greater than 7.5.",
+        "B": "The observation of large-scale structures, such as galaxy clusters, around quasars at redshifts greater than 6.",
+        "C": "The discovery of quasars with billion-solar-mass black holes at redshifts greater than 7.5.",
+        "D": "The measurement of high Eddington ratios in quasars at redshifts greater than 6.",
+        "choice": " C.\n\nHowever, I would be happy to provide an explanation if you'd like! The observation of quasars with billion-solar-mass black holes at redshifts greater than 7.5 supports the conclusion that supermassive black holes must form and grow rapidly within the first billion years of cosmic history because it challenges the current theories on how these massive structures could have formed over such a short timescale. This discovery suggests that there must have been some rapid growth mechanism at work, likely involving the mergers of smaller galaxies or the collapse of very large clouds of gas."
+    },
+    {
+        "\ufeffquestion": "What is the primary method used to measure the masses of black holes in high-redshift quasars?",
+        "A": "Direct imaging of the accretion disk around the black hole.",
+        "B": "Analysis of the gravitational lensing effects caused by the black hole.",
+        "C": "Measurement of the X-ray luminosity and temperature of the accretion disk.",
+        "D": "Analysis of the widths and luminosities of broad emission lines in the quasar spectra.",
+        "choice": " D. Analysis of the widths and luminosities of broad emission lines in the quasar spectra."
+    },
+    {
+        "\ufeffquestion": "What evidence suggests that quasar feedback plays a significant role in the evolution of their host galaxies?",
+        "A": "The observation of large Ly\u03b1 nebulae around quasars, which indicate the presence of strong outflows.",
+        "B": "The discovery of a high fraction of quasars with broad absorption line features, which trace high-velocity winds.",
+        "C": "The detection of strong radio emission from quasars, which is associated with powerful jets.",
+        "D": "All of the above.",
+        "choice": " D.\n\nHowever, I'd be happy to provide an explanation if you'd like! Quasars are extremely luminous active galactic nuclei powered by supermassive black holes. The powerful energy output from quasars can have significant effects on their host galaxies, such as heating the interstellar medium and driving outflows. Evidence for this includes large Ly\u03b1 nebulae around quasars (A), high fractions of quasars with broad absorption line features (B), and strong radio emission from quasars (C). Therefore, all of these observations suggest that quasar feedback plays a significant role in the evolution of their host galaxies."
+    },
+    {
+        "\ufeffquestion": "How are quasars used to probe the history of cosmic reionization?",
+        "A": "By analyzing the absorption of light from the quasar by neutral hydrogen in the intergalactic medium.",
+        "B": "By studying the emission of ionizing photons from the quasar and its contribution to the reionization process.",
+        "C": "By measuring the temperature of the intergalactic medium around the quasar, which is affected by reionization.",
+        "D": "All of the above.",
+        "choice": " D. All of the above."
+    },
+    {
+        "\ufeffquestion": "What is the primary reason for the increased use of Gaussian processes (GPs) in astronomy over the past two decades?",
+        "A": "The development of more powerful telescopes that collect significantly more data.",
+        "B": "Advancements in computational power and the availability of user-friendly GP software packages.",
+        "C": "A shift in research focus towards areas where GPs are particularly well-suited, such as exoplanet research.",
+        "D": "The discovery of new astrophysical phenomena that can only be modeled using GPs.",
+        "choice": " B.\n\n[Explanation: The correct answer is B because advancements in computational power and the availability of user-friendly GP software packages have made it possible for astronomers to effectively use Gaussian processes for data analysis.]"
+    },
+    {
+        "\ufeffquestion": "How can Gaussian processes (GPs) be used to model the light curve of a star with transiting exoplanets?",
+        "A": "A GP can model the transit signal itself, allowing for the inference of planetary parameters.",
+        "B": "A GP can represent stellar variability and instrumental noise, improving the accuracy of transit parameter estimation.",
+        "C": "A GP can be used to detect transits in the presence of significant stellar variability.",
+        "D": "All of the above.",
+        "choice": " D. All of the above."
+    },
+    {
+        "\ufeffquestion": "What is a significant challenge associated with using Gaussian processes (GPs) in astronomy, and how can it be addressed?",
+        "A": "GPs are prone to overfitting, which can be mitigated by using simpler kernel functions.",
+        "B": "GPs can be computationally expensive for large datasets, but scalable algorithms and approximate methods have been developed.",
+        "C": "GPs assume Gaussian noise, which may not always be appropriate, but alternative stochastic process models can be used.",
+        "D": "GPs are difficult to interpret, requiring specialized expertise, but open-source software packages have made them more accessible.",
+        "choice": " B. GPs can be computationally expensive for large datasets, but scalable algorithms and approximate methods have been developed."
+    },
+    {
+        "\ufeffquestion": "How does the chemical environment of the inner disk differ from that of the outer disk?",
+        "A": "The inner disk is characterized by lower temperatures and densities, leading to slower chemical reactions and a greater reliance on inherited molecules.",
+        "B": "The inner disk experiences higher temperatures and densities, resulting in the sublimation of volatiles and faster chemical timescales.",
+        "C": "The inner disk is dominated by ion-molecule chemistry due to intense stellar radiation, while the outer disk exhibits primarily neutral-neutral reactions.",
+        "D": "Both inner and outer disks exhibit similar chemical environments due to efficient mixing and transport processes.",
+        "choice": " B. The inner disk experiences higher temperatures and densities, resulting in the sublimation of volatiles and faster chemical timescales."
+    },
+    {
+        "\ufeffquestion": "What are the primary observational techniques used to study the chemistry of protoplanetary disks across different regions?",
+        "A": "X-ray and UV observations are ideal for probing the cold gas in the outer disk, while infrared spectroscopy is best suited for studying the hot inner disk.",
+        "B": "Millimeter and submillimeter observations are suitable for studying the cold gas in the outer disk, while infrared spectroscopy targets the warmer inner disk.",
+        "C": "Visible light observations are most effective for analyzing the outer disk due to its low dust density, while infrared observations are better for the inner disk.",
+        "D": "Radio observations provide the best insights into the inner disk's dense molecular regions, while X-ray observations are more suited for the outer disk.",
+        "choice": " B. Millimeter and submillimeter observations are suitable for studying the cold gas in the outer disk, while infrared spectroscopy targets the warmer inner disk."
+    },
+    {
+        "\ufeffquestion": "How do snowlines influence the chemical composition and evolution of protoplanetary disks?",
+        "A": "Snowlines have minimal impact on disk chemistry as molecules readily transition between gas and solid phases regardless of temperature.",
+        "B": "Snowlines act as barriers, preventing the exchange of molecules between the inner and outer disk, leading to distinct chemical compositions.",
+        "C": "The condensation of volatiles at snowlines alters the gas and solid-phase chemistry, impacting the availability of key elements and the formation of complex organics.",
+        "D": "Snowlines primarily affect the dynamics of the disk by creating pressure bumps that trap dust and gas, but their influence on chemistry is negligible.",
+        "choice": " C. The condensation of volatiles at snowlines alters the gas and solid-phase chemistry, impacting the availability of key elements and the formation of complex organics."
+    },
+    {
+        "\ufeffquestion": "Why is CO often considered an unreliable tracer of gas mass in protoplanetary disks, and what alternative tracers have been proposed?",
+        "A": "CO is readily photodissociated in the disk environment, leading to underestimates of gas mass. Water vapor is a more reliable tracer due to its higher abundance and stability.",
+        "B": "CO abundance can be significantly depleted in disks due to freeze-out, conversion to other molecules, and dynamical processes, affecting gas mass estimations. N2H+ and HD have been proposed as alternative tracers.",
+        "C": "CO emission is optically thick, making it difficult to accurately determine its column density and, consequently, the gas mass. Isotopologues of CO offer a more reliable alternative.",
+        "D": "CO is not a major constituent of disk gas, and its distribution does not correlate well with the overall gas density. Dust continuum emission provides a more direct measure of gas mass.",
+        "choice": " B. CO abundance can be significantly depleted in disks due to freeze-out, conversion to other molecules, and dynamical processes, affecting gas mass estimations. N2H+ and HD have been proposed as alternative tracers."
+    },
+    {
+        "\ufeffquestion": "What is the primary reason for the recent revolution in optical/infrared (O/IR) interferometry?",
+        "A": "Advancements in radio interferometry techniques have been adapted for O/IR wavelengths.",
+        "B": "The construction of new interferometers with a larger number of telescopes has significantly improved data collection.",
+        "C": "The implementation of dual-beam phase-referencing, along with adaptive optics and fringe tracking, has enabled observations of much fainter objects.",
+        "D": "Breakthroughs in detector technology have dramatically increased the sensitivity and resolution of O/IR interferometers.",
+        "choice": " C. The implementation of dual-beam phase-referencing, along with adaptive optics and fringe tracking, has enabled observations of much fainter objects."
+    },
+    {
+        "\ufeffquestion": "How do large telescopes provide a significant advantage for O/IR interferometry compared to smaller telescopes?",
+        "A": "Large telescopes have a larger collecting area, leading to increased sensitivity and the ability to observe fainter objects.",
+        "B": "Large telescopes offer a smaller diffraction limit, resulting in a reduced field of view and enabling observations in crowded regions like the Galactic Center.",
+        "C": "The increased coherence time of large telescopes allows for longer integration times and improved signal-to-noise ratios.",
+        "D": "All of the above.",
+        "choice": " C: The increased coherence time of large telescopes allows for longer integration times and improved signal-to-noise ratios."
+    },
+    {
+        "\ufeffquestion": "What is the primary limitation for fringe tracking in O/IR interferometry with large telescopes?",
+        "A": "The short coherence time of the atmosphere restricts the exposure times and limits the achievable sensitivity.",
+        "B": "Vibrations from the telescopes and instruments introduce additional optical path length fluctuations that are challenging to correct.",
+        "C": "The faintness of the observed objects makes it difficult to track the fringes accurately.",
+        "D": "The limited sky coverage due to the isopistonic angle restricts the availability of suitable reference stars for fringe tracking.",
+        "choice": " B.\n\n[Explanation: The primary limitation for fringe tracking in O/IR interferometry with large telescopes is indeed vibrations from the telescopes and instruments that introduce additional optical path length fluctuations, making it challenging to correct them accurately.]"
+    },
+    {
+        "\ufeffquestion": "How does the concept of closure phase improve the capabilities of O/IR interferometry?",
+        "A": "Closure phase allows for the recovery of phase information that is corrupted by atmospheric turbulence, enabling true imaging with interferometers.",
+        "B": "Closure phase extends the coherence time of the observations, leading to increased sensitivity and the ability to observe fainter objects.",
+        "C": "Closure phase provides precise astrometric information, allowing for accurate measurements of stellar positions and motions.",
+        "D": "Closure phase enables the simultaneous observation of multiple objects within the same field of view, increasing the efficiency of data collection.",
+        "choice": " A. Closure phase allows for the recovery of phase information that is corrupted by atmospheric turbulence, enabling true imaging with interferometers."
+    },
+    {
+        "\ufeffquestion": "What is the main objective of the proposed LIFE space mission?",
+        "A": "To conduct high-precision astrometry of stars and exoplanets, leading to improved measurements of stellar masses and distances.",
+        "B": "To image the surfaces of stars with unprecedented resolution, providing insights into stellar atmospheres and magnetic fields.",
+        "C": "To directly detect and characterize Earth-like exoplanets in the habitable zones of nearby stars using nulling interferometry.",
+        "D": "To study the formation and evolution of galaxies by observing the distribution and kinematics of atomic hydrogen in the Milky Way and other galaxies.",
+        "choice": " C. To directly detect and characterize Earth-like exoplanets in the habitable zones of nearby stars using nulling interferometry."
+    },
+    {
+        "\ufeffquestion": "What is the primary distinction between short-period comets (SPCs) and long-period comets (LPCs) within our Solar System?",
+        "A": "SPCs originate from the Oort cloud, while LPCs originate from the Kuiper belt.",
+        "B": "SPCs have highly eccentric orbits, while LPCs have more circular orbits.",
+        "C": "SPCs have a more isotropic distribution of inclinations compared to LPCs.",
+        "D": "SPCs originate from the Kuiper belt, while LPCs originate from the Oort cloud.",
+        "choice": " B. SPCs have highly eccentric orbits, while LPCs have more circular orbits."
+    },
+    {
+        "\ufeffquestion": "What is the primary factor limiting our ability to accurately estimate the size of long-period comet (LPC) nuclei?",
+        "A": "The inherent faintness of LPCs makes them difficult to observe.",
+        "B": "The significant distances of LPCs from the Sun make them challenging to detect.",
+        "C": "The presence of a coma often obscures the nucleus, making direct measurement difficult.",
+        "D": "The rapid movement of LPCs across the sky makes it difficult to track them.",
+        "choice": " C. The presence of a coma often obscures the nucleus, making direct measurement difficult."
+    },
+    {
+        "\ufeffquestion": "What is the significance of the Safronov number (\\0398) in the context of planetary systems and the ejection of objects into interstellar space?",
+        "A": "It represents the ratio of a planet's escape velocity to its orbital velocity, indicating its potential for ejecting objects.",
+        "B": "It quantifies the gravitational influence of a planet on nearby objects, determining their orbital stability.",
+        "C": "It measures the density of a planet's atmosphere, influencing its ability to capture interstellar objects.",
+        "D": "It represents the rate of a planet's rotation, impacting its ability to retain objects in its orbit.",
+        "choice": " A. It represents the ratio of a planet's escape velocity to its orbital velocity, indicating its potential for ejecting objects."
+    },
+    {
+        "\ufeffquestion": "How does the composition of 2I/Borisov compare to typical comets in our Solar System, and what does this suggest about its origin?",
+        "A": "2I/Borisov exhibits a similar composition to most comets, indicating formation within the same region of the Solar System.",
+        "B": "2I/Borisov is significantly depleted in volatile materials compared to typical comets, suggesting a different formation process.",
+        "C": "2I/Borisov is exceptionally rich in carbon monoxide (CO) compared to most comets, suggesting formation in a colder, more distant region of a protoplanetary disk.",
+        "D": "2I/Borisov lacks water ice, unlike most comets, suggesting formation in a very dry environment.",
+        "choice": " B. 2I/Borisov is significantly depleted in volatile materials compared to typical comets, suggesting a different formation process."
+    },
+    {
+        "\ufeffquestion": "What is the primary challenge in definitively identifying interstellar meteors?",
+        "A": "Interstellar meteors are extremely rare, making them difficult to observe.",
+        "B": "Interstellar meteors are often too small to be detected by current instruments.",
+        "C": "Distinguishing the hyperbolic trajectories of interstellar meteors from those of objects originating within the Solar System requires highly precise velocity and directional measurements, which are challenging to obtain.",
+        "D": "Interstellar meteors burn up completely upon entering the atmosphere, leaving no physical evidence for analysis.",
+        "choice": " C.\n\n[Note: While all options have some truth to them, option C is the most directly relevant answer to the question as asked.]"
+    },
+    {
+        "\ufeffquestion": "The properties of the circumgalactic medium (CGM) primarily depend on the competition between:",
+        "A": "Star formation rate and supernova feedback.",
+        "B": "Gas cooling and stellar winds.",
+        "C": "Gravity-driven infall and gas cooling.",
+        "D": "Magnetic fields and thermal conduction.",
+        "choice": " C. Gravity-driven infall and gas cooling."
+    },
+    {
+        "\ufeffquestion": "In the context of gas accretion onto galaxies, 'cold accretion' refers to a scenario where:",
+        "A": "Gas cools slowly compared to its free-fall time, leading to a hot, pressure-supported halo.",
+        "B": "Gas cools rapidly compared to its free-fall time, often forming filamentary structures known as cold streams.",
+        "C": "Gas accretion is primarily driven by the cooling flow of hot gas within the cooling radius.",
+        "D": "Gas accretion is dominated by the infall of cold gas clumps from the intergalactic medium.",
+        "choice": " D. Gas accretion is dominated by the infall of cold gas clumps from the intergalactic medium."
+    },
+    {
+        "\ufeffquestion": "What is the primary physical explanation for cold streams having higher specific angular momentum than the dark matter halo?",
+        "A": "Hydrodynamic interactions during halo mergers cause the gas and dark matter to become offset, with misaligned spins leading to greater spin-up of the gas.",
+        "B": "Cold gas, due to its clumpy and filamentary structure, experiences more efficient tidal torquing compared to the more smoothly distributed dark matter.",
+        "C": "Feedback processes preferentially eject low angular momentum gas from the halo, leaving behind gas with higher specific angular momentum.",
+        "D": "All of the above.",
+        "choice": " C.\n\n[Note: Without additional context, it's impossible to know for certain which answer is correct. The given options are possible explanations for the phenomenon described in the question, but it's important to remember that multiple factors can contribute to the observed difference in specific angular momentum between cold streams and dark matter halos. A more thorough analysis would be needed to determine which (if any) of these explanations is most applicable in a given situation.]"
+    },
+    {
+        "\ufeffquestion": "The process of 'wind recycling' in the circumgalactic medium refers to:",
+        "A": "The reaccretion of galactic wind material back onto the galaxy, potentially after undergoing a phase change.",
+        "B": "The continuous cycle of gas being ejected from the galaxy by stellar feedback and then re-accreted due to gravity.",
+        "C": "The transfer of gas ejected from satellite galaxies to the central galaxy, contributing to its star formation.",
+        "D": "The mixing of wind material with the ambient circumgalactic medium, leading to changes in its chemical composition.",
+        "choice": " A.\n\n[Explanation: The process of 'wind recycling' refers to the reaccretion of galactic wind material back onto the galaxy.]"
+    },
+    {
+        "\ufeffquestion": "The 'cold gas survival length' is a critical scale in the CGM because it:",
+        "A": "Determines the minimum size a cold gas cloud needs to be in order to avoid destruction by hydrodynamic instabilities.",
+        "B": "Sets the characteristic scale for cold gas fragmentation due to rapid cooling.",
+        "C": "Represents the scale at which thermal conduction and radiative cooling balance, influencing cloud evolution.",
+        "D": "Defines the scale at which cold gas becomes self-gravitating and collapses to form stars.",
+        "choice": " C.\n\n[Explanation: The 'cold gas survival length' is the scale at which thermal conduction and radiative cooling balance, influencing cloud evolution in the Interstellar Medium. It does not determine minimum size for cold gas clouds or set the characteristic scale for fragmentation due to rapid cooling.]"
+    },
+    {
+        "\ufeffquestion": "What is the primary factor that determines whether a region in the Universe can form Population III stars?",
+        "A": "The region must have a virial temperature above 8,000 K.",
+        "B": "The region must be enriched with metals from previous generations of stars.",
+        "C": "The region must be able to cool efficiently, allowing for runaway gravitational collapse.",
+        "D": "The region must be located within a large dark matter halo.",
+        "choice": " C. The region must be able to cool efficiently, allowing for runaway gravitational collapse."
+    },
+    {
+        "\ufeffquestion": "What is the primary distinction between the Population III.1 and Population III.2 star formation pathways?",
+        "A": "Pop III.1 stars form in isolation, while Pop III.2 stars form in clusters.",
+        "B": "Pop III.1 stars are more massive than Pop III.2 stars.",
+        "C": "Pop III.1 and Pop III.2 stars form in different types of dark matter halos, with Pop III.2 stars forming in atomic cooling halos.",
+        "D": "The primary coolant for Pop III.1 star formation is molecular hydrogen (H\\{}_{2}\\), while Pop III.2 star formation is primarily cooled by deuterated hydrogen (HD).",
+        "choice": " A. Pop III.1 stars form in isolation, while Pop III.2 stars form in clusters."
+    },
+    {
+        "\ufeffquestion": "What is the most likely outcome of the star formation process in a primordial gas cloud?",
+        "A": "The formation of a single, very massive Population III star.",
+        "B": "The formation of a pair of Population III stars with similar masses in a close binary system.",
+        "C": "The formation of a small cluster of Population III stars with a range of masses.",
+        "D": "The formation of a large number of low-mass Population III stars, similar to the present-day initial mass function.",
+        "choice": " A. The formation of a single, very massive Population III star."
+    },
+    {
+        "\ufeffquestion": "What is the primary mechanism driving the transition from Population III to Population II star formation?",
+        "A": "The buildup of a strong Lyman-Werner background that suppresses H\\{}_{2}\\ cooling in low-mass dark matter halos.",
+        "B": "The enrichment of the gas with metals from the first supernovae, leading to more efficient cooling and fragmentation.",
+        "C": "The increasing density of the Universe, making it easier for gas to cool and collapse.",
+        "D": "The formation of supermassive stars that produce large amounts of ionizing radiation.",
+        "choice": " A."
+    },
+    {
+        "\ufeffquestion": "What is the most promising observational signature for directly identifying a Population III star in the high-redshift Universe?",
+        "A": "Detection of a very bright, red object in a deep field image.",
+        "B": "Detection of a strong He II 1640-\u00c5 emission line in the spectrum of a high-redshift galaxy, with no associated emission from highly ionized metals.",
+        "C": "Detection of a supernova with an extremely high peak luminosity.",
+        "D": "Detection of a gamma-ray burst with a redshift of \\z >\\ 10.",
+        "choice": " B.\n\nNote: This question assumes a certain level of astronomical knowledge and context. The answer is based on the fact that Population III stars are believed to be composed almost entirely of hydrogen and helium, without any heavy elements. Therefore, the absence of metal lines in their spectra and the presence of strong He II emission make them a promising observational signature for identifying these elusive stars in the high-redshift Universe."
+    },
+    {
+        "\ufeffquestion": "In the context of the interstellar medium (ISM), which of the following statements accurately describes the relationship between the spin temperature (T_s) and the kinetic temperature (T_k) of atomic hydrogen (Hi)?",
+        "A": "T_s and T_k are always equivalent, regardless of the Hi phase or environmental conditions.",
+        "B": "In the diffuse warm neutral medium (WNM), collisions effectively thermalize the 21 cm transition, leading to T_s being generally higher than T_k.",
+        "C": "Within the dense CNM, collisions with electrons, ions, and other Hi atoms drive T_s towards T_k, often resulting in their approximate equivalence.",
+        "D": "The presence of a Lyman-alpha radiation field has a negligible impact on the thermalization of the 21 cm transition and the relationship between T_s and T_k.",
+        "choice": " B. In the diffuse warm neutral medium (WNM), collisions effectively thermalize the 21 cm transition, leading to T\\_s being generally higher than T\\_k."
+    },
+    {
+        "\ufeffquestion": "What is the primary mechanism responsible for heating the diffuse interstellar medium (ISM)?",
+        "A": "Collisional excitation of fine-structure lines in ions such as CII and OI.",
+        "B": "Photoelectric effect on dust grains, influenced by starlight intensity and grain properties.",
+        "C": "Lyman-alpha emission resulting from collisional processes.",
+        "D": "Thermalization of the 21 cm transition due to collisions with electrons and other Hi atoms.",
+        "choice": " B. Photoelectric effect on dust grains, influenced by starlight intensity and grain properties."
+    },
+    {
+        "\ufeffquestion": "Which observational technique is MOST effective for studying the properties of the cold neutral medium (CNM) in the Milky Way?",
+        "A": "Analyzing Hi emission spectra, as the CNM typically dominates the observed emission.",
+        "B": "Observing Hi absorption against background continuum sources, leveraging the CNM's moderately high optical depths.",
+        "C": "Studying Hi self-absorption (HISA), which exclusively traces the CNM and provides clear separation from the WNM.",
+        "D": "Utilizing low-frequency radio polarimetry to measure Faraday rotation, as it directly probes the magnetic field associated with the CNM.",
+        "choice": " C. Studying Hi self-absorption (HISA), which exclusively traces the CNM and provides clear separation from the WNM."
+    },
+    {
+        "\ufeffquestion": "What is the primary challenge in interpreting the spatial power spectrum (SPS) of Hi emission to understand turbulence in the Milky Way?",
+        "A": "The SPS of Hi emission is insensitive to different turbulent driving mechanisms and modes, making it difficult to distinguish their contributions.",
+        "B": "The multiphase nature of Hi, with varying optical depths and line-of-sight complexities, introduces significant uncertainties in SPS analysis.",
+        "C": "Observational limitations, such as limited spatial resolution and sensitivity, prevent accurate measurement of the SPS slope across different spatial scales.",
+        "D": "The lack of theoretical models and simulations that can accurately predict the SPS of Hi emission for different turbulent regimes hinders interpretation of observational results.",
+        "choice": " D. The lack of theoretical models and simulations that can accurately predict the SPS of Hi emission for different turbulent regimes hinders interpretation of observational results."
+    },
+    {
+        "\ufeffquestion": "What key insights have been gained from the Gaia satellite mission?",
+        "A": "Precise measurements of stellar distances and motions, leading to a better understanding of the Milky Way's structure and evolution.",
+        "B": "Detailed observations of exoplanet atmospheres, revealing their composition and potential for habitability.",
+        "C": "High-resolution imaging of distant galaxies, providing clues about the early universe and galaxy formation processes.",
+        "D": "Detection of gravitational waves from merging black holes and neutron stars, opening a new window into the cosmos.",
+        "choice": " A. Precise measurements of stellar distances and motions, leading to a better understanding of the Milky Way's structure and evolution."
+    },
+    {
+        "\ufeffquestion": "What is the significance of the detection of GeV gamma rays from novae?",
+        "A": "It indicates the presence of strong magnetic fields in nova systems, which are essential for particle acceleration.",
+        "B": "It suggests that novae are sites of significant nucleosynthesis, producing heavy elements that enrich the interstellar medium.",
+        "C": "It provides evidence for the existence of shock waves and particle acceleration processes in nova explosions, offering new insights into these energetic events.",
+        "D": "It reveals the presence of accretion disks around white dwarfs in nova systems, confirming the binary nature of these objects.",
+        "choice": " C. It provides evidence for the existence of shock waves and particle acceleration processes in nova explosions, offering new insights into these energetic events."
+    },
+    {
+        "\ufeffquestion": "Which of the following statements best describes the significance of the Carrington event in the context of solar flares?",
+        "A": "It was the first recorded solar flare, marking the beginning of our understanding of solar activity.",
+        "B": "It remains the most powerful solar flare ever observed, showcasing the potential for extreme solar events.",
+        "C": "It provided the first evidence of the connection between solar flares and geomagnetic storms, highlighting the impact on Earth.",
+        "D": "It revealed unique physical characteristics not observed in other solar flares, leading to new theoretical models.",
+        "choice": " B. It remains the most powerful solar flare ever observed, showcasing the potential for extreme solar events."
+    },
+    {
+        "\ufeffquestion": "How do stellar flares observed by Kepler differ from solar flares observed in Total Solar Irradiance (TSI) data?",
+        "A": "Stellar flares exhibit a much wider range of energies compared to solar flares.",
+        "B": "Stellar flares have longer durations and slower rise times than solar flares.",
+        "C": "Stellar flares are primarily detected in X-ray wavelengths, while solar flares are observed in the optical range.",
+        "D": "Stellar flares occur on stars with significantly different spectral types than the Sun.",
+        "choice": " A. Stellar flares exhibit a much wider range of energies compared to solar flares."
+    },
+    {
+        "\ufeffquestion": "What is the primary challenge in estimating the total energy released in a solar flare?",
+        "A": "The lack of a comprehensive theoretical model that accounts for all forms of energy involved in a flare.",
+        "B": "The difficulty in observing the entire electromagnetic spectrum emitted during a flare, particularly in the UV and IR ranges.",
+        "C": "The complex and dynamic nature of flares, with significant spatial and temporal variations in physical parameters.",
+        "D": "The uncertainty in measuring the magnetic field strength and configuration in the solar corona.",
+        "choice": " C. The complex and dynamic nature of flares, with significant spatial and temporal variations in physical parameters."
+    },
+    {
+        "\ufeffquestion": "Why is the detection of stellar coronal mass ejections (CMEs) challenging compared to solar CMEs?",
+        "A": "Stellar CMEs are much less frequent and have lower energies than solar CMEs.",
+        "B": "The distances to stars make direct observation of stellar CMEs impossible with current technology.",
+        "C": "Stellar flares are much brighter and mask the signatures of stellar CMEs.",
+        "D": "The magnetic fields of stars are much weaker, resulting in less pronounced CME effects.",
+        "choice": " B.\n\nExplanation: The distances to stars make direct observation of stellar CMEs impossible with current technology."
+    },
+    {
+        "\ufeffquestion": "What is the implication of the power-law distribution of solar flare energies for understanding extreme solar events?",
+        "A": "The power-law suggests that extremely large flares are statistically inevitable, posing a significant threat to Earth.",
+        "B": "The power-law indicates that the total energy released by flares is dominated by the most frequent, small flares.",
+        "C": "The power-law implies a self-organized criticality in the solar corona, leading to unpredictable flare occurrences.",
+        "D": "The power-law distribution may not extend to extremely high energies, limiting the predictability of superflares.",
+        "choice": " A. The power-law suggests that extremely large flares are statistically inevitable, posing a significant threat to Earth."
+    },
+    {
+        "\ufeffquestion": "What is the primary mechanism responsible for the thermonuclear runaway (TNR) in novae?",
+        "A": "A deflagration wave propagating through the white dwarf.",
+        "B": "The accumulation of helium ash leading to unstable helium burning.",
+        "C": "The rapid release of energy from nuclear burning exceeding the transport capacity of radiation and conduction, leading to convection.",
+        "D": "Sudden accretion of a large amount of mass from the companion star onto the white dwarf.",
+        "choice": " C.\n\nHowever, I'd be happy to provide an explanation if you'd like! The primary mechanism responsible for the thermonuclear runaway in novae is the rapid release of energy from nuclear burning exceeding the transport capacity of radiation and conduction, leading to convection. This convective mixing brings fresh fuel to the hotter regions where the temperature is sufficient for the nuclear reactions to occur, sustaining the explosive outburst."
+    },
+    {
+        "\ufeffquestion": "Which observational evidence supports the presence of internal shocks within nova ejecta?",
+        "A": "The detection of GeV gamma-ray emission from classical novae with main sequence companions.",
+        "B": "The presence of dust dips in the optical light curves of some novae.",
+        "C": "The observation of supersoft X-ray emission from the white dwarf surface.",
+        "D": "The detection of thermal radio emission from the expanding ionized ejecta.",
+        "choice": " B. The presence of dust dips in the optical light curves of some novae."
+    },
+    {
+        "\ufeffquestion": "What is the primary factor influencing the turn-off time of the supersoft X-ray phase in novae?",
+        "A": "The orbital period of the binary system.",
+        "B": "The mass of the white dwarf.",
+        "C": "The speed class of the nova.",
+        "D": "The presence or absence of dust formation.",
+        "choice": " B. The mass of the white dwarf."
+    },
+    {
+        "\ufeffquestion": "What is a potential explanation for the underluminous X-ray emission observed from novae compared to theoretical expectations, even when there is evidence for powerful shocks from gamma-ray observations?",
+        "A": "The X-ray emission is absorbed by the dense ejecta surrounding the shocks.",
+        "B": "The X-ray and gamma-ray emissions originate from distinct shock structures within the ejecta.",
+        "C": "Multidimensional effects and instabilities in radiative shocks can suppress X-ray emission relative to one-dimensional models.",
+        "D": "The shocks are primarily accelerating electrons rather than ions, leading to inefficient X-ray production.",
+        "choice": " C. Multidimensional effects and instabilities in radiative shocks can suppress X-ray emission relative to one-dimensional models."
+    },
+    {
+        "\ufeffquestion": "What are the implications of nova eruptions for the evolution of cataclysmic variable (CV) populations?",
+        "A": "Novae consistently cause CV binaries to expand, leading to a decrease in mass transfer rate and potential hibernation.",
+        "B": "Novae always result in a net increase in the white dwarf mass, potentially leading to Type Ia supernovae.",
+        "C": "Novae can induce both mass and angular momentum loss from the binary, with the net effect on orbital separation depending on the relative contributions of these processes.",
+        "D": "Novae have no significant impact on the long-term evolution of CV binaries.",
+        "choice": " C. Novae can induce both mass and angular momentum loss from the binary, with the net effect on orbital separation depending on the relative contributions of these processes."
+    },
+    {
+        "\ufeffquestion": "Which of the following is NOT a key question related to the deterministic aspect of cool aging stars in enriching the Universe?",
+        "A": "What mechanisms transport newly created elements from the core to the outer atmosphere?",
+        "B": "What are the conditions leading to the formation of molecules and solid-state dust species?",
+        "C": "Under which circumstances can a stellar wind form, and what are the resulting wind velocities and mass-loss rates?",
+        "D": "How do the fundamental laws of physics and chemistry govern the processes in cool aging stars?",
+        "choice": " A."
+    },
+    {
+        "\ufeffquestion": "Why are empirical mass-loss rate formulas potentially problematic for use in stellar evolution models?",
+        "A": "They often rely on simplified parameterizations that may introduce bias.",
+        "B": "They may suffer from selection effects due to observational limitations.",
+        "C": "They may not accurately reflect the true dependence of mass loss on stellar parameters for individual stars.",
+        "D": "All of the above.",
+        "choice": " D."
+    },
+    {
+        "\ufeffquestion": "How do 3D clumps in stellar winds impact the determination of mass-loss rates?",
+        "A": "They are the primary cause of mass loss and significantly increase the mass-loss rate.",
+        "B": "They contribute non-negligibly to the total mass loss, but are not the main driver of the process.",
+        "C": "They have a negligible impact on the overall mass-loss rate.",
+        "D": "They cause significant underestimation of the mass-loss rate due to obscuration effects.",
+        "choice": " B. They contribute non-negligibly to the total mass loss, but are not the main driver of the process."
+    },
+    {
+        "\ufeffquestion": "What is the current understanding of the role of binary companions in shaping the winds of cool aging stars?",
+        "A": "Binary companions are rarely found around cool aging stars and have a negligible impact on their winds.",
+        "B": "Binary companions are common and play a significant role in shaping the winds of cool aging stars, particularly those with detectable mass-loss rates.",
+        "C": "Binary companions are only relevant for shaping the winds of post-AGB stars and planetary nebulae.",
+        "D": "The presence of a binary companion always leads to an increase in the mass-loss rate of the primary star.",
+        "choice": " B."
+    },
+    {
+        "\ufeffquestion": "What is the main challenge in understanding dust nucleation in the winds of oxygen-rich cool aging stars?",
+        "A": "Observational limitations prevent the detection of dust nucleation processes.",
+        "B": "The specific pathways and reaction rates involved in the formation of the first dust seeds are still uncertain.",
+        "C": "Thermodynamic equilibrium models accurately predict dust nucleation, leaving no room for further investigation.",
+        "D": "Dust nucleation only plays a minor role in the overall mass-loss process and is therefore not a significant area of study.",
+        "choice": " B. The specific pathways and reaction rates involved in the formation of the first dust seeds are still uncertain."
+    },
+    {
+        "\ufeffquestion": "What is the significance of the 'radius valley' observed in the distribution of exoplanets?",
+        "A": "It represents a region in the period-radius plane where planets with radii around 2 Earth radii and orbital periods of 3-30 days are less common.",
+        "B": "It indicates a zone where planets experience extreme tidal forces, leading to their disruption and the formation of debris disks.",
+        "C": "It signifies a boundary beyond which planets are predominantly gaseous giants, while planets closer to the star are primarily rocky.",
+        "D": "It marks the transition zone between planets formed through core accretion and those formed through gravitational instability.",
+        "choice": " A."
+    },
+    {
+        "\ufeffquestion": "How does the presence of stellar companions influence the formation and detection of exoplanets?",
+        "A": "Stellar companions can dilute transit signals, potentially leading to misclassification of planets and inaccurate parameter estimations. Additionally, their gravitational influence can suppress planet formation in close binary systems.",
+        "B": "Stellar companions provide additional sources of gravitational perturbations, enhancing planet formation by promoting planetesimal accretion and facilitating the formation of gas giants.",
+        "C": "Stellar companions contribute to the metallicity enrichment of planetary systems, leading to the formation of more massive and diverse planets, including super-Earths and hot Jupiters.",
+        "D": "Stellar companions act as gravitational lenses, increasing the detectability of exoplanets through microlensing events and enabling the discovery of planets at greater distances from their host stars.",
+        "choice": " A. Stellar companions can dilute transit signals, potentially leading to misclassification of planets and inaccurate parameter estimations. Additionally, their gravitational influence can suppress planet formation in close binary systems."
+    },
+    {
+        "\ufeffquestion": "What is the relationship between inner super-Earths and outer cold Jupiters?",
+        "A": "Inner super-Earths and outer cold Jupiters exhibit a strong positive correlation, meaning that systems with inner super-Earths are more likely to host outer cold Jupiters and vice versa.",
+        "B": "Inner super-Earths and outer cold Jupiters show a negative correlation, indicating that the presence of one type of planet hinders the formation of the other.",
+        "C": "There is no significant correlation between inner super-Earths and outer cold Jupiters, suggesting independent formation and evolution processes.",
+        "D": "The relationship between inner super-Earths and outer cold Jupiters is complex and dependent on factors such as stellar metallicity and the presence of additional planets in the system.",
+        "choice": " D."
+    },
+    {
+        "\ufeffquestion": "What are the key theoretical challenges posed by the observed exoplanet statistics, particularly for the core accretion and pebble accretion models?",
+        "A": "Both core accretion and pebble accretion models struggle to explain the high efficiency of planet formation, the abundance of super-Earths, and the strong correlation between inner super-Earths and outer cold Jupiters.",
+        "B": "The core accretion model faces challenges in explaining the formation of super-Earths, while the pebble accretion model struggles to account for the presence of hot Jupiters.",
+        "C": "The core accretion model has difficulty explaining the diversity of planetary systems, while the pebble accretion model cannot fully account for the observed eccentricity distribution of exoplanets.",
+        "D": "Both models face challenges in explaining the existence of free-floating planets and the formation of planets around low-mass stars, such as M dwarfs.",
+        "choice": " A. Both core accretion and pebble accretion models struggle to explain the high efficiency of planet formation, the abundance of super-Earths, and the strong correlation between inner super-Earths and outer cold Jupiters."
+    },
+    {
+        "\ufeffquestion": "What is the key characteristic that distinguishes wave dark matter from particle dark matter?",
+        "A": "Wave dark matter consists of bosons, while particle dark matter consists of fermions.",
+        "B": "Wave dark matter exhibits wave-like behavior, such as interference and diffraction, due to its large de Broglie wavelength compared to the interparticle separation.",
+        "C": "Wave dark matter interacts only gravitationally, while particle dark matter can have additional interactions.",
+        "D": "Wave dark matter is necessarily ultralight (mass around 10\\207b\u00b2\u00b2 eV), while particle dark matter can have a wide range of masses.",
+        "choice": " B.\n\n[Explanation: Wave dark matter exhibits wave-like behavior due to its large de Broglie wavelength compared to the interparticle separation, while particle dark matter is made up of particles that do not exhibit wave-like behavior under normal conditions.]"
+    },
+    {
+        "\ufeffquestion": "How does the linear power spectrum of wave dark matter compare to that of conventional cold dark matter (CDM)?",
+        "A": "They are identical on all scales.",
+        "B": "Wave dark matter has a suppressed power spectrum on small scales (high k) due to quantum pressure, but matches CDM on large scales (low k).",
+        "C": "Wave dark matter has an enhanced power spectrum on small scales due to wave interference, but matches CDM on large scales.",
+        "D": "Wave dark matter has a suppressed power spectrum on all scales compared to CDM.",
+        "choice": " B. Wave dark matter has a suppressed power spectrum on small scales due to quantum pressure, but matches CDM on large scales."
+    },
+    {
+        "\ufeffquestion": "What is the nature of solitons or boson stars in the context of wave dark matter, and under what conditions can they form?",
+        "A": "They are regions of high density formed by constructive wave interference, and they can form in the centers of dark matter halos when quantum pressure balances gravitational attraction.",
+        "B": "They are regions of low density formed by destructive wave interference, and they can form in the outer regions of dark matter halos due to tidal forces.",
+        "C": "They are compact objects formed by the collapse of massive stars, and they can exist only for wave dark matter with very specific masses and interactions.",
+        "D": "They are hypothetical particles that mediate the interactions between wave dark matter particles, and their existence is necessary for structure formation.",
+        "choice": " A. They are regions of high density formed by constructive wave interference, and they can form in the centers of dark matter halos when quantum pressure balances gravitational attraction."
+    },
+    {
+        "\ufeffquestion": "What are some observational signatures of wave dark matter, and how can they be used to constrain its properties?",
+        "A": "The primary signature is the absence of small-scale structures in the early Universe, which can be probed by observations of the cosmic microwave background and the Lyman-alpha forest.",
+        "B": "Wave dark matter can form unique structures like solitons and vortices, which can be detected through gravitational lensing and the heating of stars and stellar streams.",
+        "C": "Wave dark matter can cause the polarization of light to rotate as it travels through space, which can be measured in observations of distant galaxies and the cosmic microwave background.",
+        "D": "All of the above.",
+        "choice": " D.\n\n[Explanation: The primary signatures of wave dark matter are indeed the absence of small-scale structures in the early Universe, the formation of unique structures like solitons and vortices, and the polarization of light as it travels through space. These signatures can be probed through various observations, such as those of the cosmic microwave background, the Lyman-alpha forest, gravitational lensing, and distant galaxies.]"
+    },
+    {
+        "\ufeffquestion": "Which of the following statements best describes the current understanding of the origin of trans-Neptunian objects (TNOs)?",
+        "A": "TNOs are a simple remnant of objects that formed in the protoplanetary disk beyond Neptune.",
+        "B": "TNOs are a mixture of primordial objects and objects that formed closer to the Sun and were transported outward during giant planet migration.",
+        "C": "All TNOs formed beyond Neptune and were subsequently scattered by gravitational interactions.",
+        "D": "TNOs were captured from the Oort cloud during a close encounter with another star.",
+        "choice": " C. All TNOs formed beyond Neptune and were subsequently scattered by gravitational interactions."
+    },
+    {
+        "\ufeffquestion": "What is the primary mechanism responsible for the capture of TNOs into Neptune's mean-motion resonances?",
+        "A": "Gravitational interactions with the other giant planets.",
+        "B": "Collisions between TNOs.",
+        "C": "The Kozai mechanism.",
+        "D": "Neptune's outward migration.",
+        "choice": " A.\n\n[Explanation: The primary mechanism responsible for the capture of Trans-Neptunian Objects (TNOs) into Neptune's mean-motion resonances is gravitational interactions with the other giant planets.]"
+    },
+    {
+        "\ufeffquestion": "What is the most likely explanation for the 'detached' population of TNOs, which have perihelia beyond the gravitational influence of Neptune?",
+        "A": "They were captured from the Oort cloud.",
+        "B": "They formed in situ at their current locations.",
+        "C": "They were scattered outward by Neptune and then had their perihelia lifted by interactions with other massive objects.",
+        "D": "They are the remnants of a massive collisional cascade in the outer Solar System.",
+        "choice": " C. They were scattered outward by Neptune and then had their perihelia lifted by interactions with other massive objects."
+    },
+    {
+        "\ufeffquestion": "Why is the size distribution of TNOs important for understanding their formation?",
+        "A": "It provides information about the collisional history of the trans-Neptunian region.",
+        "B": "It constrains the total mass of the TNO population.",
+        "C": "It helps distinguish between different TNO formation mechanisms.",
+        "D": "All of the above.",
+        "choice": " D.\n\nExplanation:\nWhile all of the options provide valuable information about TNOs, the size distribution of TNOs is particularly important for understanding their formation because it provides information about the collisional history of the trans-Ne Neptunian region (Option A), it constrains the total mass of the TNO population (Option B), and it helps distinguish between different TNO formation mechanisms (Option C). Therefore, the answer is D, which indicates that all of the above statements are correct. However, as a helpful assistant, I would be happy to provide an explanation upon request!"
+    },
+    {
+        "\ufeffquestion": "What are the prospects for detecting a distant cold TNO population beyond the current edge of the Kuiper Belt?",
+        "A": "It is unlikely to be detected due to its low surface density and small size distribution.",
+        "B": "It may be detectable through serendipitous stellar occultations.",
+        "C": "It will be easily detected by the LSST survey.",
+        "D": "It has already been detected by deep surveys with Subaru and CFHT.",
+        "choice": " A. It is unlikely to be detected due to its low surface density and small size distribution."
+    },
+    {
+        "\ufeffquestion": "What was the significance of the detection of GRB 170817A in relation to GW170817?",
+        "A": "It confirmed the existence of gravitational waves.",
+        "B": "It established a connection between short gamma-ray bursts and neutron star mergers.",
+        "C": "It provided the first evidence of a black hole merger.",
+        "D": "It led to the discovery of a new type of supernova.",
+        "choice": " B. It established a connection between short gamma-ray bursts and neutron star mergers."
+    },
+    {
+        "\ufeffquestion": "How did the observed properties of AT 2017gfo provide evidence for the r-process?",
+        "A": "The light curve's timescale and luminosity were consistent with the radioactive decay of r-process elements.",
+        "B": "The spectra exhibited distinct features associated with specific r-process elements like gold and platinum.",
+        "C": "The presence of a strong magnetic field indicated the rapid neutron capture characteristic of the r-process.",
+        "D": "The high expansion velocities of the ejecta were indicative of the explosive environment required for the r-process.",
+        "choice": " A. The light curve's timescale and luminosity were consistent with the radioactive decay of r-process elements."
+    },
+    {
+        "\ufeffquestion": "What is the significance of the potential emergence of a kilonova afterglow in the X-rays?",
+        "A": "It would provide evidence for a long-lived central engine, such as a magnetar.",
+        "B": "It would offer constraints on the geometry and energy of the kilonova ejecta.",
+        "C": "It would indicate the presence of a previously undetected population of supernovae.",
+        "D": "It would confirm the existence of a black hole as the merger remnant.",
+        "choice": " A."
+    },
+    {
+        "\ufeffquestion": "What is the primary factor influencing the physics of accretion disks around black holes?",
+        "A": "The mass of the black hole.",
+        "B": "The distance of the accretion disk from Earth.",
+        "C": "The chemical composition of the accretion disk.",
+        "D": "The mechanism of angular momentum removal from the accreting matter.",
+        "choice": " A. \n[The mass of the black hole is the primary factor influencing the physics of accretion disks around black holes.]"
+    },
+    {
+        "\ufeffquestion": "Why is the innermost stable circular orbit (ISCO) significant for understanding accretion disks and measuring black hole spin?",
+        "A": "It marks the boundary where matter transitions from orbiting the black hole to falling directly into it.",
+        "B": "It is the location where the accretion disk's temperature reaches its maximum.",
+        "C": "It is the only region of the accretion disk that emits X-rays.",
+        "D": "It is the source of the relativistic jets observed in some black hole systems.",
+        "choice": " A."
+    },
+    {
+        "\ufeffquestion": "How does the accretion rate impact the properties and observational features of black hole accretion disks?",
+        "A": "Higher accretion rates lead to geometrically thinner and hotter disks, while lower accretion rates result in geometrically thicker and cooler disks.",
+        "B": "Accretion rate has a negligible impact on the disk's properties and observational features.",
+        "C": "Higher accretion rates lead to the formation of relativistic jets, while lower accretion rates do not.",
+        "D": "Accretion rate primarily affects the chemical composition of the accretion disk.",
+        "choice": " A."
+    },
+    {
+        "\ufeffquestion": "How do the properties of black holes observed in X-ray binaries differ from those detected through gravitational waves, and what are the implications for black hole formation scenarios?",
+        "A": "Black holes in X-ray binaries tend to be more massive and have higher spins compared to those observed in gravitational wave events. This suggests distinct formation channels, with X-ray binary black holes potentially formed through isolated stellar evolution and spun up by accretion, while gravitational wave black holes may originate from dynamical interactions in dense stellar clusters with limited spin-up.",
+        "B": "Black holes in X-ray binaries and those detected through gravitational waves exhibit very similar properties, suggesting a common formation mechanism.",
+        "C": "Black holes in X-ray binaries are primarily of primordial origin, while gravitational wave black holes are formed through stellar collapse.",
+        "D": "The observed properties of black holes in both X-ray binaries and gravitational wave events can be explained by a single, universal formation mechanism.",
+        "choice": " A."
+    },
+    {
+        "\ufeffquestion": "What was a major limitation of ground-based optical astrometry in the 20th century that motivated the need for space-based observations?",
+        "A": "The inability to observe faint stars.",
+        "B": "The lack of suitable reference frames.",
+        "C": "The distorting effects of Earth's atmosphere.",
+        "D": "The limitations of photographic plates for data collection.",
+        "choice": " C. The distorting effects of Earth's atmosphere."
+    },
+    {
+        "\ufeffquestion": "How does the _Gaia_ mission achieve absolute parallax measurements, as opposed to relative parallax measurements?",
+        "A": "By observing stars over a very long baseline.",
+        "B": "By using a single telescope with a very large aperture.",
+        "C": "By utilizing two telescopes with widely separated fields of view.",
+        "D": "By referencing observations to distant extragalactic sources.",
+        "choice": " C. By utilizing two telescopes with widely separated fields of view."
+    },
+    {
+        "\ufeffquestion": "What is the primary advantage of _Gaia_'s scanning law, which involves a continuous reorientation of the spacecraft?",
+        "A": "It allows for the observation of the entire sky in a relatively short period.",
+        "B": "It enables the precise measurement of the distances to nearby stars.",
+        "C": "It facilitates the study of the motions of stars within star clusters.",
+        "D": "It allows for the detection of exoplanets around other stars.",
+        "choice": " D. It allows for the detection of exoplanets around other stars."
+    },
+    {
+        "\ufeffquestion": "How can the combination of _Gaia_ data with other astronomical surveys enhance our understanding of the Milky Way?",
+        "A": "By providing more accurate measurements of stellar distances.",
+        "B": "By allowing for the identification of previously unknown stars.",
+        "C": "By enabling the study of the chemical compositions and ages of stars.",
+        "D": "By revealing the presence of dark matter in the Milky Way's halo.",
+        "choice": " C. By enabling the study of the chemical compositions and ages of stars."
+    },
+    {
+        "\ufeffquestion": "What is the primary factor that determines the rate at which stars are tidally disrupted by massive black holes?",
+        "A": "The temperature of the star",
+        "B": "The age of the galaxy",
+        "C": "The mass of the central black hole",
+        "D": "The distance of the star from the galactic center",
+        "choice": " C. The mass of the central black hole."
+    }
+]

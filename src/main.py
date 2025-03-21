@@ -8,7 +8,8 @@ def parse_arguments():
     parser = argparse.ArgumentParser(description="run to get response and get value precision")
 
     # 添加我们希望解析的命令行参数
-    parser.add_argument("-s", "--split", type=str, default="train", help="Split: train or test")
+    # platform代表我们调用模型的平台，分别是ollama和付费的api，ollama可以调用一些免费的小模型，paid_api可以调用GPT-4o、Claude等付费模型（来源于https://flowus.cn/share/de98cb21-3c6d-4561-b6ac-648daa2bacda）。
+    parser.add_argument("-p", "--platform", type=str, default="ollama", help="Platform: Select the platform named ollama or paid_api")
 
     # Analyze command-line parameters
     args = parser.parse_args()
@@ -16,51 +17,8 @@ def parse_arguments():
     # Return parsed parameters
     return args
 
-'''
-调用付费api
-模型默认使用gpt-4o
-'''
-def run_llm(user_input, model_name = "gpt-4o", sys_input = "You are a helpful assistant."):
-    client = OpenAI(
-        base_url = "https://xiaoai.plus/v1",
-        api_key = "sk-s1VtI20SlpB6fPj05aB17e566b2646B2862bB3D5289cE177"
-    )
-    completion = client.chat.completions.create(
-    model = model_name,
-    messages = [
-        {"role": "system", "content": sys_input},
-        {"role": "user", "content": user_input}
-    ]
-    )
-    return completion.choices[0].message.content
-
-'''
-调用ollama api
-模型默认使用llama2
-'''
-def process_with_ollama(user_input, model_name = "llama2", sys_input = "You are a helpful assistant."):
-    # print('Starting to process with ollama, note that this can take several minutes…')
-    response = ollama.chat(
-        model = model_name,
-        messages = [ {'role': 'system', 'content': sys_input}, 
-                     {'role': 'user', 'content': user_input}, ]
-    )
-
-    return response['message']['content']
 
 
-
-
-# 直接做QA的模板
-QA_TEMPLATE = """
-Answer the following multiple-choice question by selecting only the correct option (A, B, C, or D). Do not provide an explanation.
-
-{question_choice}
-
-Format: Return only a single uppercase letter (A, B, C, or D).
-
-Answer:
-"""
 
 '''
 将question和choice处理成我们想要的格式
@@ -79,12 +37,17 @@ def format_qc(data):
 '''
 为选择题生成答案
 '''
-def get_response(dataset, llm_name, save_path):
+def get_response(dataset, llm_name, save_path, input_args):
     print("Get response...")
     new_dataset = []
     for idx, data in tqdm(enumerate(dataset)):
         input = QA_TEMPLATE.replace("{question_choice}", format_qc(data))
-        choice = run_llm(input, llm_name)
+        if input_args.platform == "ollama":
+            choice = process_with_ollama(input, llm_name)
+        elif input_args.platform == "paid_api":
+            choice = run_llm(input, llm_name)
+        else:
+            print("Please select a correct platform...")
         data['choice'] = choice
         new_dataset.append(data)
         if idx % 100 == 0 and idx != 0:
@@ -105,19 +68,6 @@ def get_response_ollama(dataset, llm_name, save_path):
     toolkit.write_to_json(new_dataset, save_path)
 
 
-
-# 为question生成explanation的模板
-EXPLANATION_TEMPLATE = """
-Identify and explain the key technical terms in the following question. Provide a concise definition for each term.
-
-Question: {question}
-
-Output format:
-- **Term 1**: Definition
-- **Term 2**: Definition
-- **Term 3**: Definition
-...
-"""
 
 '''
 为题目生成名词解释

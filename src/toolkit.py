@@ -9,6 +9,7 @@ import json
 import os
 import csv
 import ollama
+from openai import OpenAI
 
 
 # Load json file as list
@@ -88,43 +89,15 @@ def write_to_csv(data: list, csv_file_path):
             writer.writerow(row)
 
 
-def process_with_ollama(model, prompt, rule):
+def process_with_ollama(user_input, model_name = "llama2", sys_input = "You are a helpful assistant."):
     # print('Starting to process with ollama, note that this can take several minutes…')
     response = ollama.chat(
-        model = model,
-        messages = [ {'role': 'system', 'content': rule}, 
-                     {'role': 'user', 'content': prompt}, ]
+        model = model_name,
+        messages = [ {'role': 'system', 'content': sys_input}, 
+                     {'role': 'user', 'content': user_input}, ]
     )
-    '''
-    response contains these content.
-        model: str
-        'Model used to generate response.'
 
-        created_at: str
-        'Time when the request was created.'
-
-        done: bool
-        'True if response is complete, otherwise False. Useful for streaming to detect the final response.'
-
-        total_duration: int
-        'Total duration in nanoseconds.'
-
-        load_duration: int
-        'Load duration in nanoseconds.'
-
-        prompt_eval_count: int
-        'Number of tokens evaluated in the prompt.'
-
-        prompt_eval_duration: int
-        'Duration of evaluating the prompt in nanoseconds.'
-
-        eval_count: int
-        'Number of tokens evaluated in inference.'
-
-        eval_duration: int
-        'Duration of evaluating inference in nanoseconds.'
-    '''
-    return response
+    return response['message']['content']
 
 
 # Determine whether the sentence is completely generated.
@@ -133,3 +106,18 @@ def judgeStop(response):
         return False # This sentence ends normally.
     else:
         return True # This sentence is incompletely generated.
+    
+
+def process_with_api(user_input, model_name = "gpt-4o", sys_input = "You are a helpful assistant."):
+    client = OpenAI(
+    base_url = "https://xiaoai.plus/v1",
+    api_key = "sk-s1VtI20SlpB6fPj05aB17e566b2646B2862bB3D5289cE177"
+    )
+    completion = client.chat.completions.create(
+    model = model_name,
+    messages = [
+        {"role": "system", "content": sys_input},
+        {"role": "user", "content": user_input}
+    ]
+    )
+    return completion.choices[0].message.content

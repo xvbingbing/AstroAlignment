@@ -1,8 +1,7 @@
 import argparse
 import toolkit
 from tqdm import tqdm
-from openai import OpenAI
-import ollama
+import prompt_template
 
 def parse_arguments():
     parser = argparse.ArgumentParser(description="run to get response and get value precision")
@@ -18,6 +17,20 @@ def parse_arguments():
     return args
 
 
+'''
+为题目生成名词解释
+'''
+def get_knowledge(dataset, llm_name, save_path):
+    print("Get knowledge...")
+    new_dataset = []
+    for idx, data in tqdm(enumerate(dataset)):
+        question = data['\ufeffquestion']
+        ans = toolkit.run_llm(prompt_template.EXPLANATION_TEMPLATE.replace('{question}', question), llm_name)
+        data['explanation'] = ans
+        new_dataset.append(data)
+        if idx % 100 == 0 and idx != 0:
+            toolkit.write_to_json(new_dataset, save_path[:-5]+"_"+str(idx)+".json")
+    toolkit.write_to_json(new_dataset, save_path)
 
 
 '''
@@ -38,14 +51,14 @@ def format_qc(data):
 为选择题生成答案
 '''
 def get_response(dataset, llm_name, save_path, input_args):
-    print("Get response...")
+    print("Get response from ", input_args.model)
     new_dataset = []
     for idx, data in tqdm(enumerate(dataset)):
-        input = QA_TEMPLATE.replace("{question_choice}", format_qc(data))
+        input = prompt_template.QA_TEMPLATE.replace("{question_choice}", format_qc(data))
         if input_args.platform == "ollama":
-            choice = process_with_ollama(input, llm_name)
+            choice = toolkit.process_with_ollama(input, llm_name)
         elif input_args.platform == "paid_api":
-            choice = run_llm(input, llm_name)
+            choice = toolkit.run_llm(input, llm_name)
         else:
             print("Please select a correct platform...")
         data['choice'] = choice
@@ -53,58 +66,6 @@ def get_response(dataset, llm_name, save_path, input_args):
         if idx % 100 == 0 and idx != 0:
             toolkit.write_to_json(new_dataset, save_path[:-5]+"_"+str(idx)+".json")
     toolkit.write_to_json(new_dataset, save_path)
-
-def get_response_ollama(dataset, llm_name, save_path):
-    print("Get response from ollama...")
-    new_dataset = []
-    for idx, data in tqdm(enumerate(dataset)):
-        input = QA_TEMPLATE.replace("{question_choice}", format_qc(data))
-        choice = process_with_ollama(input, llm_name)
-        data['choice'] = choice
-        new_dataset.append(data)
-        if idx % 100 == 0 and idx != 0:
-            toolkit.write_to_json(new_dataset, save_path[:-5]+"_"+str(idx)+".json")
-        # break
-    toolkit.write_to_json(new_dataset, save_path)
-
-
-
-'''
-为题目生成名词解释
-'''
-def get_knowledge(dataset, llm_name, save_path):
-    print("Get knowledge...")
-    new_dataset = []
-    for idx, data in tqdm(enumerate(dataset)):
-        question = data['\ufeffquestion']
-        ans = run_llm(EXPLANATION_TEMPLATE.replace('{question}', question), llm_name)
-        data['explanation'] = ans
-        new_dataset.append(data)
-        if idx % 100 == 0 and idx != 0:
-            toolkit.write_to_json(new_dataset, save_path[:-5]+"_"+str(idx)+".json")
-    toolkit.write_to_json(new_dataset, save_path)
-
-
-# 加入知识后的模板
-KNOWLEDGE_QA_TEMPLATE = """
-### Step 1: Learning Phase
-First, I will provide you with some background knowledge. Use this knowledge as a reference when answering, but feel free to apply reasoning and prior understanding where necessary.
-
-[START KNOWLEDGE]
-{knowledge}
-[END KNOWLEDGE]
-
-### Step 2: Question Phase
-Now, based on the knowledge above, answer the following question:
-
-Question: {question}
-
-### Answer Guidelines:
-1. Your answer should be **informed by the provided knowledge**, but you may also incorporate relevant reasoning.
-2. If the question is multiple-choice, return only the correct option (A, B, C, or D).
-
-Answer:
-"""
 
 
 '''
@@ -121,13 +82,17 @@ def format_knowledge(data):
 '''
 根据knowledge为选择题生成答案
 '''
-def get_knowledge_response(dataset, llm_name, save_path):
+def get_knowledge_response(dataset, llm_name, save_path, input_args):
     print("Get knowledge response...")
     new_dataset = []
     for idx, data in tqdm(enumerate(dataset)):
-        input = KNOWLEDGE_QA_TEMPLATE.replace('{knowledge}', format_knowledge(data)).replace('{question}', format_qc(data))
-        # print(input)
-        choice = run_llm(input, llm_name)
+        input = prompt_template.KNOWLEDGE_QA_TEMPLATE.replace('{knowledge}', format_knowledge(data)).replace('{question}', format_qc(data))
+        if input_args.platform == "ollama":
+            choice = toolkit.process_with_ollama(input, llm_name)
+        elif input_args.platform == "paid_api":
+            choice = toolkit.run_llm(input, llm_name)
+        else:
+            print("Please select a correct platform...")
         # print(choice)
         data['choice'] = choice
         new_dataset.append(data)

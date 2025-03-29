@@ -110,14 +110,14 @@ def judgeStop(response):
 
 def process_with_api(user_input, model_name = "gpt-4o", sys_input = "You are a helpful assistant."):
     client = OpenAI(
-    base_url = "https://xiaoai.plus/v1",
-    api_key = "sk-s1VtI20SlpB6fPj05aB17e566b2646B2862bB3D5289cE177"
+        base_url = "https://xiaoai.plus/v1",
+        api_key = "sk-s1VtI20SlpB6fPj05aB17e566b2646B2862bB3D5289cE177"
     )
     completion = client.chat.completions.create(
-    model = model_name,
-    messages = [
-        {"role": "system", "content": sys_input},
-        {"role": "user", "content": user_input}
-    ]
+        model = model_name,
+        messages = [
+            {"role": "system", "content": sys_input},
+            {"role": "user", "content": user_input}
+        ],
     )
     return completion.choices[0].message.content

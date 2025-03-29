@@ -10,7 +10,7 @@ def parse_arguments():
     # platform代表我们调用模型的平台，分别是ollama和付费的api，ollama可以调用一些免费的小模型，paid_api可以调用GPT-4o、Claude等付费模型（来源于https://flowus.cn/share/de98cb21-3c6d-4561-b6ac-648daa2bacda）。
     parser.add_argument("-p", "--platform", type=str, default="ollama", help="Platform: Select the platform named ollama or paid_api")
     parser.add_argument("-d", "--dataset", type=str, default="train_dataset_en", help="Dataset")
-    parser.add_argument("-m", "--model", type=str, default="vicuna", help="Model: vicuna, mistral, llama2, llama3, aplaca2, alpaca3, gpt-35-turbo")
+    parser.add_argument("-m", "--model", type=str, default="vicuna", help="Model: vicuna, mistral, llama2, llama3, aplaca2, alpaca3, gpt-35-turbo, gpt-4o, claude-3-5-sonnet-20241022")
     parser.add_argument("-c", "--cl", type=str, default="original", help="Class: original or rag")
     
     # 设置数据的处理范围，range代表是否有范围，
@@ -60,8 +60,15 @@ def format_qc(data):
 '''
 def get_response(dataset, save_path, input_args):
     print("Get response from ", input_args.platform, "--", input_args.model)
+    if args.range:
+        print("The range of dataset is ", args.start_idx, "-", args.end_idx, "...")
+        all_slice = slice(args.start_idx, args.end_idx)
+        save_path = save_path[:-5] + "_" + str(args.start_idx) + "-" + str(args.end_idx) + ".json"
+    else:
+        all_slice = slice(None, None)
+
     new_dataset = []
-    for idx, data in tqdm(enumerate(dataset)):
+    for idx, data in tqdm(enumerate(dataset[all_slice])):
         input = prompt_template.QA_TEMPLATE.replace("{question_choice}", format_qc(data))
         # print(input)
         if input_args.platform == "ollama":
@@ -94,8 +101,15 @@ def format_knowledge(data):
 '''
 def get_knowledge_response(dataset, save_path, input_args):
     print("Get knowledge response from ", input_args.platform, "--", input_args.model)
+    if args.range:
+        print("The range of dataset is ", args.start_idx, "-", args.end_idx, "...")
+        all_slice = slice(args.start_idx, args.end_idx)
+        save_path = save_path[:-5] + "_" + str(args.start_idx) + "-" + str(args.end_idx) + ".json"
+    else:
+        all_slice = slice(None, None)
+
     new_dataset = []
-    for idx, data in tqdm(enumerate(dataset)):
+    for idx, data in tqdm(enumerate(dataset[all_slice])):
         input = prompt_template.KNOWLEDGE_QA_TEMPLATE.replace('{knowledge}', format_knowledge(data)).replace('{question}', format_qc(data))
         # print(input)
         if input_args.platform == "ollama":
@@ -114,8 +128,11 @@ def get_knowledge_response(dataset, save_path, input_args):
     toolkit.write_to_json(new_dataset, save_path)
 
 
-# python main.py -p ollama -d 'train_dataset_en' -m mistral -c original
-# python main.py -p ollama -d 'train_dataset_en_explanation' -m mistral -c rag
+# python main.py -p ollama -d 'train_dataset_en' -m mistral -c original -r -start 0 -end 2
+# python main.py -p ollama -d 'train_dataset_en_explanation' -m mistral -c rag -r -start 0 -end 2
+
+# python main.py -p paid_api -d 'train_dataset_en' -m 'claude-3-5-sonnet-20241022' -c original -r -start 0 -end 2
+# python main.py -p paid_api -d 'train_dataset_en_explanation' -m 'claude-3-5-sonnet-20241022' -c rag -r -start 0 -end 2
 if __name__ == "__main__":
     args = parse_arguments()
     print("Running with arguments: ", args)
@@ -131,14 +148,3 @@ if __name__ == "__main__":
         get_knowledge_response(dataset, save_path, args)
     else:
         print("Please input a valid method class...")
-
-
-    # print(dataset[0])
-
-    # dataset = toolkit.load_json_data("./train_dataset_en_explanation_list.json")
-    # dataset = toolkit.load_csv_data("./train_dataset_en.csv")
-    # print(dataset[0]['\ufeffquestion'])
-    # get_response(dataset, "claude-3-5-sonnet-20241022", "./train_dataset_en_choice.json")
-    # get_knowledge(dataset, "claude-3-5-sonnet-20241022", "./train_dataset_en_explanation.json")
-    # get_knowledge_response(dataset, "claude-3-5-sonnet-20241022", "./train_dataset_en_explanation_list_choice.json")
-    # get_response_ollama(dataset, "mistral:latest", "./train_dataset_en_choice_mistral.json")

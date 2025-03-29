@@ -25,22 +25,26 @@ Output format:
 
 
 # 加入知识后的模板
-KNOWLEDGE_QA_TEMPLATE = """
-### Step 1: Learning Phase
-First, I will provide you with some background knowledge. Use this knowledge as a reference when answering, but feel free to apply reasoning and prior understanding where necessary.
+KNOWLEDGE_QA_TEMPLATE = KNOWLEDGE_QA_TEMPLATE = """
+### Step 1: Background Knowledge
+I will now provide you with some background knowledge from my perspective. This information may or may not be directly related to the question. However, please consider it thoughtfully, as it might help inform your reasoning.
 
 [START KNOWLEDGE]
 {knowledge}
 [END KNOWLEDGE]
 
-### Step 2: Question Phase
-Now, based on the knowledge above, answer the following question:
+### Step 2: Question
+Now, based on the question below, provide your answer. Feel free to incorporate relevant ideas or reasoning from the background knowledge if it helps you form a better answer.
 
 Question: {question}
 
-### Answer Guidelines:
-1. Your answer should be **informed by the provided knowledge**, but you may also incorporate relevant reasoning.
-2. If the question is multiple-choice, return only the correct option (A, B, C, or D).
+### Answer Format (strictly required):
+Your answer **must** follow this exact format:
 
-Answer:
+Choice: <A/B/C/D>, Explanation: <your explanation here>
+
+### Format Example:
+Choice: B, Explanation: Because it allows astronomers to analyze a wide range of wavelengths, which helps identify various physical processes in the observed system.
+
+### Now Your Answer:
 """

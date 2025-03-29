@@ -91,8 +91,8 @@ def format_knowledge(data):
 '''
 根据knowledge为选择题生成答案
 '''
-def get_knowledge_response(dataset, llm_name, save_path, input_args):
-    print("Get knowledge response...")
+def get_knowledge_response(dataset, save_path, input_args):
+    print("Get knowledge response from ", input_args.platform, "--", input_args.model)
     new_dataset = []
     for idx, data in tqdm(enumerate(dataset)):
         input = prompt_template.KNOWLEDGE_QA_TEMPLATE.replace('{knowledge}', format_knowledge(data)).replace('{question}', format_qc(data))
@@ -122,7 +122,13 @@ if __name__ == "__main__":
 
     save_path = "../experiments/" + args.cl + "_" + args.model + ".json"
 
-    get_response(dataset, save_path, args)
+    if 'original' == args.cl:
+        get_response(dataset, save_path, args)
+    elif 'rag' == args.cl:
+        get_knowledge_response()
+    else:
+        print("Please input a valid method class...")
+
 
     # print(dataset[0])
 

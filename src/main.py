@@ -63,6 +63,7 @@ def get_response(dataset, save_path, input_args):
     new_dataset = []
     for idx, data in tqdm(enumerate(dataset)):
         input = prompt_template.QA_TEMPLATE.replace("{question_choice}", format_qc(data))
+        # print(input)
         if input_args.platform == "ollama":
             choice = toolkit.process_with_ollama(input, input_args.model)
         elif input_args.platform == "paid_api":
@@ -96,10 +97,11 @@ def get_knowledge_response(dataset, save_path, input_args):
     new_dataset = []
     for idx, data in tqdm(enumerate(dataset)):
         input = prompt_template.KNOWLEDGE_QA_TEMPLATE.replace('{knowledge}', format_knowledge(data)).replace('{question}', format_qc(data))
+        # print(input)
         if input_args.platform == "ollama":
-            choice = toolkit.process_with_ollama(input, llm_name)
+            choice = toolkit.process_with_ollama(input, input_args.model)
         elif input_args.platform == "paid_api":
-            choice = toolkit.run_llm(input, llm_name)
+            choice = toolkit.process_with_api(input, input_args.model)
         else:
             print("Please select a correct platform...")
         # print(choice)
@@ -113,6 +115,7 @@ def get_knowledge_response(dataset, save_path, input_args):
 
 
 # python main.py -p ollama -d 'train_dataset_en' -m mistral -c original
+# python main.py -p ollama -d 'train_dataset_en_explanation' -m mistral -c rag
 if __name__ == "__main__":
     args = parse_arguments()
     print("Running with arguments: ", args)
@@ -125,7 +128,7 @@ if __name__ == "__main__":
     if 'original' == args.cl:
         get_response(dataset, save_path, args)
     elif 'rag' == args.cl:
-        get_knowledge_response()
+        get_knowledge_response(dataset, save_path, args)
     else:
         print("Please input a valid method class...")
 

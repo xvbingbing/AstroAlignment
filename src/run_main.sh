@@ -21,8 +21,30 @@
 
 
 # claude-3-5-sonnet-20241022
-# python main.py -p paid_api -s train -d 'nature_single_select_train' -m 'claude-3-5-sonnet-20241022' -c original
+# python main.py -p paid_api -s train -d 'nature_single_select_train' -m 'claude-3-5-sonnet-20241022' -c original -r -start 200 -end 300
+
+# python main.py -p paid_api -s train -d 'nature_single_select_train' -m 'claude-3-5-sonnet-20241022' -c original -r -start 300 -end 400
+
+# python main.py -p paid_api -s train -d 'nature_single_select_train' -m 'claude-3-5-sonnet-20241022' -c original -r -start 400 -end 500
+
+# python main.py -p paid_api -s train -d 'nature_single_select_train' -m 'claude-3-5-sonnet-20241022' -c original -r -start 500 -end 600
+
+# python main.py -p paid_api -s train -d 'nature_single_select_train' -m 'claude-3-5-sonnet-20241022' -c original -r -start 600 -end 700
 
 
 # gpt-4o
-# python main.py -p paid_api -s train -d 'nature_single_select_train' -m 'gpt-4o' -c original
+python main.py -p paid_api -s train -d 'nature_single_select_train' -m 'gpt-4o' -c original -r -start 400 -end 500
+
+python main.py -p paid_api -s train -d 'nature_single_select_train' -m 'gpt-4o' -c original -r -start 500 -end 600
+
+python main.py -p paid_api -s train -d 'nature_single_select_train' -m 'gpt-4o' -c original -r -start 600 -end 700
+
+python main.py -p paid_api -s train -d 'nature_single_select_train' -m 'gpt-4o' -c original -r -start 700 -end 800
+
+python main.py -p paid_api -s train -d 'nature_single_select_train' -m 'gpt-4o' -c original -r -start 800 -end 900
+
+python main.py -p paid_api -s train -d 'nature_single_select_train' -m 'gpt-4o' -c original -r -start 900 -end 1000
+
+python main.py -p paid_api -s train -d 'nature_single_select_train' -m 'gpt-4o' -c original -r -start 1000 -end 1100
+
+python main.py -p paid_api -s train -d 'nature_single_select_train' -m 'gpt-4o' -c original -r -start 1100

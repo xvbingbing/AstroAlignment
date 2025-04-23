@@ -8755,7 +8755,7 @@
         "A": "Earth is between the Moon and the Sun.",
         "B": "The Moon is between the Earth and the Sun.",
         "C": "The sun is between the earth and the moon.",
-        "D": null,
+        "D": "null",
         "Answer": "A",
         "Parse": "So the positional relationship is: the moon is between the sun and the Earth (solar eclipse). A lunar eclipse is a special astronomical phenomenon that occurs when the moon moves into the shadow of the Earth, causing a region between the moon and the Earth to see the moon appear partially obscured as the sunlight is blocked by the Earth. At this time, the sun, Earth, and moon are exactly (or almost) aligned in a straight line."
     },

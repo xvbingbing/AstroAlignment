@@ -45,7 +45,7 @@ def get_knowledge(dataset, llm_name, save_path):
 将question和choice处理成我们想要的格式
 '''
 def format_qc(data):
-    question = data['question']
+    question = data['Question']
     choice_A = data['A']
     choice_B = data['B']
     choice_C = data['C']
@@ -81,7 +81,7 @@ def get_response(dataset, save_path, input_args):
         new_dataset.append(data)
         if idx % 100 == 0 and idx != 0:
             toolkit.write_to_json(new_dataset, save_path[:-5]+"_"+str(idx)+".json")
-        # break
+        break
     toolkit.write_to_json(new_dataset, save_path)
 
 

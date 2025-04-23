@@ -9,6 +9,7 @@ def parse_arguments():
     # 添加我们希望解析的命令行参数
     # platform代表我们调用模型的平台，分别是ollama和付费的api，ollama可以调用一些免费的小模型，paid_api可以调用GPT-4o、Claude等付费模型（来源于https://flowus.cn/share/de98cb21-3c6d-4561-b6ac-648daa2bacda）。
     parser.add_argument("-p", "--platform", type=str, default="ollama", help="Platform: Select the platform named ollama or paid_api")
+    parser.add_argument("-s", "--split", type=str, default="train", help="train or test")
     parser.add_argument("-d", "--dataset", type=str, default="train_dataset_en", help="Dataset")
     parser.add_argument("-m", "--model", type=str, default="vicuna", help="Model: vicuna, mistral, llama2, llama3, aplaca2, alpaca3, gpt-35-turbo, gpt-4o, claude-3-5-sonnet-20241022")
     parser.add_argument("-c", "--cl", type=str, default="original", help="Class: original or rag")
@@ -81,7 +82,7 @@ def get_response(dataset, save_path, input_args):
         new_dataset.append(data)
         if idx % 100 == 0 and idx != 0:
             toolkit.write_to_json(new_dataset, save_path[:-5]+"_"+str(idx)+".json")
-        break
+        # break
     toolkit.write_to_json(new_dataset, save_path)
 
 
@@ -130,9 +131,11 @@ def get_knowledge_response(dataset, save_path, input_args):
 
 # python main.py -p ollama -d 'train_dataset_en' -m mistral -c original -r -start 0 -end 2
 # python main.py -p ollama -d 'train_dataset_en_explanation' -m mistral -c rag -r -start 0 -end 2
+# python main.py -p ollama -s train -d 'nature_single_select_train' -m mistral -c original
 
 # python main.py -p paid_api -d 'train_dataset_en' -m 'claude-3-5-sonnet-20241022' -c original -r -start 0 -end 2
 # python main.py -p paid_api -d 'train_dataset_en_explanation' -m 'claude-3-5-sonnet-20241022' -c rag -r -start 0 -end 2
+# python main.py -p paid_api -s train -d 'nature_single_select_train' -m 'claude-3-5-sonnet-20241022' -c original
 if __name__ == "__main__":
     args = parse_arguments()
     print("Running with arguments: ", args)
@@ -140,7 +143,7 @@ if __name__ == "__main__":
     dataset_path = "../data/" + args.dataset + ".json"
     dataset = toolkit.load_json_data(dataset_path)
 
-    save_path = "../experiments/" + args.cl + "_" + args.model + ".json"
+    save_path = "../experiments/" + args.cl + "_" + args.model + "_" + args.split + ".json"
 
     if 'original' == args.cl:
         get_response(dataset, save_path, args)

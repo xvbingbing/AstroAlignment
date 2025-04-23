@@ -94,7 +94,10 @@ def process_with_ollama(user_input, model_name = "llama2", sys_input = "You are 
     response = ollama.chat(
         model = model_name,
         messages = [ {'role': 'system', 'content': sys_input}, 
-                     {'role': 'user', 'content': user_input}, ]
+                     {'role': 'user', 'content': user_input}, ],
+        options={
+            'temperature': 0.0  # 设置 temperature 参数
+        }
     )
 
     return response['message']['content']
@@ -119,5 +122,6 @@ def process_with_api(user_input, model_name = "gpt-4o", sys_input = "You are a h
             {"role": "system", "content": sys_input},
             {"role": "user", "content": user_input}
         ],
+        temperature = 0.0
     )
     return completion.choices[0].message.content

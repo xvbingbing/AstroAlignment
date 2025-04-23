@@ -25,7 +25,7 @@ Output format:
 
 
 # 加入知识后的模板
-KNOWLEDGE_QA_TEMPLATE = KNOWLEDGE_QA_TEMPLATE = """
+KNOWLEDGE_QA_TEMPLATE = """
 ### Step 1: Background Knowledge
 I will now provide you with some background knowledge from my perspective. This information may or may not be directly related to the question. However, please consider it thoughtfully, as it might help inform your reasoning.
 

@@ -11,6 +11,8 @@ import csv
 import ollama
 from openai import OpenAI
 
+API_KEY = "sk-s1VtI20SlpB6fPj05aB17e566b2646B2862bB3D5289cE177"
+
 
 # Load json file as list
 def load_json_data(path):
@@ -114,7 +116,7 @@ def judgeStop(response):
 def process_with_api(user_input, model_name = "gpt-4o", sys_input = "You are a helpful assistant."):
     client = OpenAI(
         base_url = "https://xiaoai.plus/v1",
-        api_key = "sk-s1VtI20SlpB6fPj05aB17e566b2646B2862bB3D5289cE177"
+        api_key = API_KEY
     )
     completion = client.chat.completions.create(
         model = model_name,

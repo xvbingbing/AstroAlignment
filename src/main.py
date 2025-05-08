@@ -111,7 +111,7 @@ def get_knowledge_response(dataset, save_path, input_args):
 
     new_dataset = []
     for idx, data in tqdm(enumerate(dataset[all_slice])):
-        input = prompt_template.KNOWLEDGE_QA_TEMPLATE.replace('{knowledge}', format_knowledge(data)).replace('{question}', format_qc(data))
+        input = prompt_template.KNOWLEDGE_QA_TEMPLATE.replace('{knowledge}', data["Parse"]).replace('{question}', format_qc(data))
         # print(input)
         if input_args.platform == "ollama":
             choice = toolkit.process_with_ollama(input, input_args.model)
@@ -129,13 +129,6 @@ def get_knowledge_response(dataset, save_path, input_args):
     toolkit.write_to_json(new_dataset, save_path)
 
 
-# python main.py -p ollama -d 'train_dataset_en' -m mistral -c original -r -start 0 -end 2
-# python main.py -p ollama -d 'train_dataset_en_explanation' -m mistral -c rag -r -start 0 -end 2
-# python main.py -p ollama -s train -d 'nature_single_select_train' -m mistral -c original
-
-# python main.py -p paid_api -d 'train_dataset_en' -m 'claude-3-5-sonnet-20241022' -c original -r -start 0 -end 2
-# python main.py -p paid_api -d 'train_dataset_en_explanation' -m 'claude-3-5-sonnet-20241022' -c rag -r -start 0 -end 2
-# python main.py -p paid_api -s train -d 'nature_single_select_train' -m 'claude-3-5-sonnet-20241022' -c original
 if __name__ == "__main__":
     args = parse_arguments()
     print("Running with arguments: ", args)

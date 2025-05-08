@@ -11,7 +11,7 @@ import csv
 import ollama
 from openai import OpenAI
 
-API_KEY = "sk-s1VtI20SlpB6fPj05aB17e566b2646B2862bB3D5289cE177"
+API_KEY = "sk-dl0HcURoHC6L4iAlNnHu9H3Y5iCtk4Y6iuko2o5lROjXrSB8"
 
 
 # Load json file as list

@@ -21,6 +21,7 @@ python main.py -p ollama -s train -d 'nature_single_select_train' -m gemma2 -c r
 
 # Llama3.1-8B
 # python main.py -p ollama -s train -d 'nature_single_select_train' -m 'llama3.1' -c original
+python main.py -p ollama -s train -d 'nature_single_select_train' -m 'llama3.1' -c rag
 
 
 # claude-3-5-sonnet-20241022
